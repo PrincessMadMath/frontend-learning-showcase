@@ -1,0 +1,82 @@
+#brandImage {
+    padding-left: 50px;
+}
+
+#navMenu {
+    padding-left: 100px;
+}
+
+#carouselImage {
+    height: 500px;
+}
+
+.mainArea {
+    padding-top: 50px;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+    max-height: 600px;
+    margin: auto;
+}
+
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.tri-container {
+    position: relative;
+    top: -30px;
+    background-color: #281f2b;
+}
+
+.tri-panel {
+    padding: 15px;
+    background-color: #281f2b;
+    min-height: 500px;
+}
+
+.tri-panel>h2 {
+    color: #FFF;
+    min-height: 2em;
+}
+
+.tri-panel>h4 {
+    color: #FFF
+}
+
+.tri-panel>p {
+    color: #928e92
+}
+
+.tri-btn {
+    background-color: #e7695b;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 10px 30px 10px 30px;
+    display: block;
+    margin: auto;
+}
+
+.tri-btn:hover {
+    background-color: #928e92;
+}
+
+.full-width-image {
+    background: url("../img/army-wallpaper.jpg") no-repeat center center;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-width-image>div {
+    padding: auto;
+    color: #FFF;
+}
+
+html {
+    background: #281f2b;
+}
