@@ -15,8 +15,8 @@
 }
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
-    width: 100%;
     max-height: 600px;
+    width: 1200px;
     margin: auto;
 }
 
@@ -34,10 +34,14 @@
 .tri-panel {
     padding: 15px;
     background-color: #281f2b;
-    min-height: 500px;
+    min-height: 30em;
 }
 
-.tri-panel>h2 {
+.tri-panel-header {
+    min-height: 5em;
+}
+
+.tri-panel-header>h2 {
     color: #FFF;
     min-height: 2em;
 }
@@ -51,6 +55,8 @@
 }
 
 .tri-btn {
+    position: relative;
+    bottom: 10px;
     background-color: #e7695b;
     color: #FFF;
     text-transform: uppercase;
