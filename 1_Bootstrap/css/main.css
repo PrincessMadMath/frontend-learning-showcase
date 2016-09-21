@@ -70,7 +70,7 @@
 }
 
 .full-width-image {
-    background: url("../img/army-wallpaper.jpg") no-repeat center center;
+    background: url("../img/army-wallpaper.jpg") top center no-repeat;
     background-size: cover;
     height: 450px;
     display: flex;
