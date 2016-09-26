@@ -1,48 +1,156 @@
-.header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #FFCECE;
+.grid-container
+{
+    display: grid;
+
+    grid-template-rows: 50px 600px auto;
+    grid-template-columns: auto 300px;
+    grid-template-areas: 'header header'
+    'welcome-image welcome-image'
+    'article-blocks possible-party';
 }
 
-.header-item {
-    width: 150px;
-    height: 50px;
+.header-container
+{
     display: flex;
+    flex-direction: row;
+
+    background-color: #ffcece;
+
+    grid-area: header;
+    justify-content: center;
+}
+
+.header-item
+{
+    display: flex;
+
+    width: 150px;
     padding-top: 5px;
+
     align-items: flex-start;
 }
 
-.header-item:hover {
-    background-color: #EEE;
+.header-item:hover
+{
+    background-color: #eee;
 }
 
-.header-item>div {
-    height: 40px;
+.header-item > div
+{
     font-weight: bold;
+
+    height: 40px;
 }
 
-.header-item>div>span {
-    display: block;
+.header-item > div > span
+{
     font-weight: normal;
+
+    display: block;
 }
 
-.header-item>img {
+.header-item > img
+{
     width: 20px;
     height: 20px;
     padding-right: 10px;
 }
 
-.main-image {
-    background: url("../img/dragon-war.jpg") no-repeat center center;
-    height: 1024px;
+.main-image
+{
     display: flex;
+
+    background: url('../img/dragon-war.jpg') no-repeat center center;
+
+    grid-area: welcome-image;
     justify-content: center;
-    align-items: center;
+    align-items: center;    ;
 }
 
-.main-image-text {
-    color: #FFF;
+.main-image-text
+{
     font-size: 69;
+
     text-align: center;
+
+    color: #fff;
+}
+
+.articles-container
+{
+    display: flex;
+
+    margin-top: 10px;
+
+    grid-area: 'article-block';
+}
+
+.article
+{
+    display: grid;
+
+    border-width: medium;
+    border-style: solid;
+    border-color: #aaa;
+
+    grid-template-rows: 200px 75px;
+    grid-template-columns: 200px;
+    grid-template-areas: 'article-image'
+    'article-text';;
+}
+
+.article-image
+{
+    border-width: thin;
+    border-style: solid;
+    border-color: #a00;
+
+    grid-area: 'article-image';
+}
+
+.article-text
+{
+    grid-area: 'article-text';
+}
+
+.parties-container
+{
+    display: flex;
+    flex-direction: column;
+
+    grid-area: 'possible-party';
+}
+
+.partie
+{
+    display: grid;
+
+    border-width: medium;
+    border-style: solid;
+    border-color: #a00;
+
+    justify-self: end;
+    grid-template-rows: 100px 75px;
+    grid-template-columns: 100px 200px;
+    grid-template-areas: 'partie-image partie-name'
+    '. partie-description';
+}
+
+.partie-image
+{
+    border-width: thin;
+    border-style: solid;
+    border-color: #a00;
+
+    grid-area: 'partie-image';
+}
+
+.partie-name
+{
+    grid-area: 'partie-name';
+}
+
+.partie-description
+{
+    grid-area: 'partie-description';
 }
