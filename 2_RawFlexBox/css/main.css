@@ -1,156 +1,146 @@
-.grid-container
-{
+.grid-container {
     display: grid;
-
     grid-template-rows: 50px 600px auto;
     grid-template-columns: auto 300px;
-    grid-template-areas: 'header header'
-    'welcome-image welcome-image'
-    'article-blocks possible-party';
+    grid-template-areas: 'header header' 'welcome-image welcome-image' 'article-blocks possible-party';
 }
 
-.header-container
-{
+.header-container {
     display: flex;
     flex-direction: row;
-
     background-color: #ffcece;
-
     grid-area: header;
     justify-content: center;
 }
 
-.header-item
-{
+.header-item {
     display: flex;
-
     width: 150px;
     padding-top: 5px;
-
     align-items: flex-start;
 }
 
-.header-item:hover
-{
+.header-item:hover {
     background-color: #eee;
 }
 
-.header-item > div
-{
+.header-item>div {
     font-weight: bold;
-
     height: 40px;
 }
 
-.header-item > div > span
-{
+.header-item>div>span {
     font-weight: normal;
-
     display: block;
 }
 
-.header-item > img
-{
+.header-item>img {
     width: 20px;
     height: 20px;
     padding-right: 10px;
 }
 
-.main-image
-{
+.main-image {
     display: flex;
-
     background: url('../img/dragon-war.jpg') no-repeat center center;
-
     grid-area: welcome-image;
     justify-content: center;
-    align-items: center;    ;
+    align-items: center;
+    ;
 }
 
-.main-image-text
-{
+.main-image-text {
     font-size: 69;
-
     text-align: center;
-
     color: #fff;
 }
 
-.articles-container
-{
+.articles-container {
+    width: 100%;
     display: flex;
-
+    flex-wrap: wrap;
     margin-top: 10px;
-
     grid-area: 'article-block';
 }
 
-.article
-{
+.article {
     display: grid;
-
     border-width: medium;
     border-style: solid;
     border-color: #aaa;
-
-    grid-template-rows: 200px 75px;
-    grid-template-columns: 200px;
-    grid-template-areas: 'article-image'
-    'article-text';;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 400px;
+    grid-template-areas: 'article-image' 'article-text';
 }
 
-.article-image
-{
+.article-image {
     border-width: thin;
     border-style: solid;
     border-color: #a00;
-
     grid-area: 'article-image';
 }
 
-.article-text
-{
+.article-image>img {
+    width: 100%;
+    height: 100%;
+}
+
+.article-text {
     grid-area: 'article-text';
 }
 
-.parties-container
-{
+.article-text>h2 {
+    text-align: center;
+}
+
+.article-text>p {
+    display: block;
+}
+
+.parties-container {
     display: flex;
     flex-direction: column;
-
     grid-area: 'possible-party';
 }
 
-.partie
-{
-    display: grid;
-
+.partie {
     border-width: medium;
     border-style: solid;
     border-color: #a00;
-
-    justify-self: end;
+    display: grid;
     grid-template-rows: 100px 75px;
     grid-template-columns: 100px 200px;
-    grid-template-areas: 'partie-image partie-name'
-    '. partie-description';
+    margin-top: 10px;
+    /*grid-template-areas: 'partie-image partie-name' 'partie-description partie-description'; */
 }
 
-.partie-image
-{
-    border-width: thin;
-    border-style: solid;
-    border-color: #a00;
-
+.partie-image {
     grid-area: 'partie-image';
+    grid-row: 1;
+    grid-column: 1;
 }
 
-.partie-name
-{
+.partie-name {
     grid-area: 'partie-name';
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
 }
 
-.partie-description
-{
+.partie-description {
     grid-area: 'partie-description';
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+
+@media only screen and (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 250px auto auto;
+        grid-template-areas: "header" "welcome-image" "article-blocks" "possible-party";
+    }
+    .main-image-text {
+        font-size: 30;
+    }
+    .article {}
 }
