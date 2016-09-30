@@ -1,0 +1,5 @@
+
+# ******* Git ignore for node artefacts *******
+
+# Dependency directories
+node_modules
