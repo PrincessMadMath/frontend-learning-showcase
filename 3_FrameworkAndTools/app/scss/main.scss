@@ -1,0 +1,33 @@
+//@import 'external/semantic-ui.scss';
+//@import 'external/kube.scss';
+
+body {
+  background: red;
+}
+
+.header {
+  padding: 1em;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+
+  &.is-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .nav {
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: block;
+        padding: 0.5em;
+        color: #aa8439;
+      }
+    }
+  }
+}
