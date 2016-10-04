@@ -2,32 +2,33 @@
 //@import 'external/kube.scss';
 
 body {
-  background: red;
+    background: red;
 }
 
 .header {
-  padding: 1em;
-  margin: 0;
-  border-bottom: 1px solid #ccc;
+    display: flex;
+    margin: 0;
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
 
-  &.is-fixed {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-  }
-
-  .nav {
-    list-style: none;
-
-    li {
-      display: inline-block;
-
-      a {
-        display: block;
-        padding: 0.5em;
-        color: #aa8439;
-      }
+    &.is-fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 10px;
     }
-  }
+
+    .nav {
+        list-style: none;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: block;
+                padding: 0.5em;
+                color: #aa8439;
+            }
+        }
+    }
 }

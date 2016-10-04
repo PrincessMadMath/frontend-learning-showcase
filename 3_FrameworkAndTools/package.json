@@ -8,16 +8,20 @@
   },
   "author": "",
   "license": "ISC",
-  "dev-dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2"
-  },
   "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "cssnano": "^3.7.6",
     "del": "^2.2.2",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-sass": "^2.3.2",
     "gulp-clean-css": "^2.0.13",
+    "gulp-cli": "^1.2.2",
     "gulp-postcss": "^6.2.0",
     "gulp-stylelint": "^3.3.0",
+    "postcss-reporter": "^1.4.1",
+    "postcss-scss": "^0.3.1",
+    "postcss-sorting": "^1.7.0",
+    "stylefmt": "^4.3.1",
     "stylelint": "^7.3.1",
-    "stylelint-config-standard": "^13.0.2"
   }
 }
